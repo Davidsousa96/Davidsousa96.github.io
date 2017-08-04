@@ -1,0 +1,45 @@
+body {
+  background: #eaeaea; }
+
+.maintenance {
+  width: 18rem;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: text-top; }
+  .maintenance > .title {
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .maintenance > .image {
+    max-width: 100%;
+    -moz-filter: grayscale(0.5);
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5);
+    -moz-transition: 0.5s filter, .7s border-radius;
+    -webkit-transition: 0.5s filter, .7s border-radius;
+    transition: 0.5s filter, .7s border-radius; }
+    .maintenance > .image:hover, .maintenance > .image:active {
+      -moz-filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      -moz-border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      border-radius: 2rem; }
+  .maintenance > .description {
+    width: 100%;
+    text-align: justify; }
+  .maintenance > .network {
+    width: 100%; }
+    .maintenance > .network img {
+      max-height: 2rem;
+      margin-left: 1rem; }
+
+@media (min-width: 0px) and (max-width: 533px) {
+  .maintenance {
+    margin-top: 0%; } }
+@media (min-width: 533px) {
+  .maintenance {
+    margin-top: 23%; } }
+
+/*# sourceMappingURL=maintenance.css.map */
