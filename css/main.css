@@ -28,22 +28,30 @@ html, body {
   .maintenance {
     margin-top: 34%; } }
 .bg-color-dark-column {
-  background-color: #292f33; }
+  background-color: #0e222b; }
 
 .bg-color-dark-zone {
-  background-color: #14171A; }
+  background-color: #0e222b; }
   .bg-color-dark-zone .close {
-    color: #66a1c9;
-    text-shadow: 0 1px 0 #e1e8ed; }
+    color: #0e222b;
+    text-shadow: 0 1px 0 #0e222b; }
 
 body {
-  color: #e1e8ed; }
+  color: white; }
 
 .fg-color-light {
-  color: #e1e8ed; }
+  color: white; }
 
 .fg-link-color-light, .fg-link-color-light a, .fg-link-color-light div, .fg-link-color-light h1, .fg-link-color-light h2, .fg-link-color-light h3, .fg-link-color-light .title {
-  color: #66a1c9; }
+  color: white; }
+
+.green-color {
+  color: #2a8;
+}
+
+.white-color {
+  color:white;
+}
 
 .border-1 {
   border: 1px solid; }
@@ -82,9 +90,9 @@ body {
           .mastercontainer .leftbar-fixed.-developer .info figure.picture img.me {
             width: 10rem;
             height: 10rem;
-            border-radius: 10rem;
-            background: brown; }
+            }
           .mastercontainer .leftbar-fixed.-developer .info figure.picture figcaption.name {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1.5rem;
             text-align: center; }
         .mastercontainer .leftbar-fixed.-developer .info .about {
