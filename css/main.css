@@ -27,20 +27,18 @@
 
 
 html, body {
+  background-color: #ffffff; 
   width: 100%;
   height: 100%; 
 }
-.bg-green {
-  background-color: #2a8; 
+h1, h2, h3, p {
+  color: #0e222b;
 }
-.bg-white {
-  background-color: white; 
+a {
+  color: #5b8f5e;
 }
-.title-green {
-  color: #2a8;
-}
-.title-white {
-  color: white;
+a:hover {
+  color: #264439;
 }
 .border-1 {
   border: 1px solid; 
@@ -55,6 +53,7 @@ html, body {
   height: 100%; 
 }
 .mastercontainer .leftbar-fixed {
+  background-color: #0e222b;
   width: 16rem;
   height: 100%;
   padding: 3rem 1.5rem;
@@ -64,28 +63,29 @@ html, body {
 .mastercontainer .leftbar-fixed.-left {
   float: left; 
 }
-.mastercontainer .leftbar-fixed.-developer .info {
-  color: white;
+.mastercontainer .leftbar-fixed.-developer .info p, h2 {
+  color: #ffffff;
   text-align: center; 
 }
 .mastercontainer .leftbar-fixed.-developer .info figure.picture img.profile {
   width: 12rem;
   height: 12rem;
+  margin: 1.5rem auto;
+  display: block;
 }
 .mastercontainer .leftbar-fixed.-developer .info .about {
   font-size: .9rem; 
   margin-top: 40px;
 }
 .mastercontainer .leftbar-fixed.-developer .info .socialmedia {
+  text-align: center;
   font-size: .9rem;
   margin-top: 100px; 
-  margin-bottom: 0px; 
-  padding-left: 12px; 
-  padding-right: 12px;
+  padding-left: 6px; 
+  padding-right: 6px;
 }
 .mastercontainer .leftbar-fixed.-developer .info .socialmedia a {
   margin-right: 1.7rem;
-  color: white;
 }
 .mastercontainer .leftbar-fixed.-developer .info .developer {
   position: absolute;
@@ -95,19 +95,19 @@ html, body {
 }
 .mastercontainer .main-container {
   display: inline-block;
-  padding: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
   margin: 0rem 2rem; 
 }
 .portfolio .section .list .preview:nth-child(-n+2) {
     width: 49%;
-    height: 240px;
+    height: 260px;
 }
 .portfolio .section .list .preview {
-    width: 32.3%;
-    background: #2a8;
+    width: 32.5%;
+    background: #0e222b;
     position: relative;
     height: 220px;
-    margin: 0 1% 1% 0;
+    margin: 0.25% 0.25% 0.25% 0.25%;
     float: left;
     cursor: pointer;
     overflow: hidden;
@@ -144,7 +144,7 @@ html, body {
 .works .work .postcard
 {
 	width: 100%;
-	height: 250px;
+	height: 120px;
 	background-size: cover;
 	background-position: center center;
 }
@@ -152,32 +152,37 @@ html, body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.works .back
-{
-	position: absolute;
-	width: 120px;
-	background: rgba(0,0,0, 0.6);
-	color: #fff;
-	font-weight: bold;
-	border-radius: 32px;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 8px 12px 8px 12px;
-	left: 24px;
-	top: 24px;
-	transition: background 0.1s, color 0.1s;
-}
-.works .back:hover
-{
-	background: #000;
-	color: #44ffaa;
-	cursor: pointer;
+.works .work {
+  margin: 0rem 4rem;
 }
 ul {
-     list-style-type:none
+  float: left;
+  list-style-type:none
 }
-.screenshots {
-	width: 347px;
-	height: 217px;
+.screenshot {
+  float: left;
+	height: 260px;
+}
+.details {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.details li {
+  margin: 0.5rem;
+}
+.inline-images {
+  float: left;
+  padding: 4rem 0rem;
+}
+.inline-images img {
+  width: 160px;
+  height: 160px;
+}
+.info {
+  padding: 1rem 0rem;
+}
+.works .work h2, p{
+  color: black;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
