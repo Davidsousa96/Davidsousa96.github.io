@@ -5,10 +5,6 @@
 @media (min-height: 0px) and (max-height: 445px) {
   .maintenance {
     margin-top: 0%; } }
-@media (min-width: 657px) {
-  .modal-dialog {
-    max-width: 1000px !important;
-    min-width: 40rem; } }
 @media (min-width: 0px) and (max-width: 768px) {
   .main-container .portfolio .project {
     min-width: 17rem !important; }
@@ -27,9 +23,10 @@
 
 
 html, body {
-  background-color: #ffffff; 
+  background-color: #fdf3cf; 
   width: 100%;
   height: 100%; 
+  font-family: 'Basic';
 }
 h1, h2, h3, p {
   color: #0e222b;
@@ -39,6 +36,10 @@ a {
 }
 a:hover {
   color: #264439;
+  text-decoration: none;
+}
+.text-alert{
+  color: red;
 }
 .border-1 {
   border: 1px solid; 
@@ -74,7 +75,7 @@ a:hover {
   display: block;
 }
 .mastercontainer .leftbar-fixed.-developer .info .about {
-  font-size: .9rem; 
+  font-size: 0.95rem; 
   margin-top: 40px;
 }
 .mastercontainer .leftbar-fixed.-developer .info .socialmedia {
@@ -120,7 +121,7 @@ a:hover {
 	height: 100%;
 	background-size: cover;
 	background-position: center center;
-	opacity: 0.9;
+	opacity: 0.6;
 	transition: opacity 0.25s, transform 0.25s;
 }
 .portfolio .section .list .preview h3 {
@@ -139,50 +140,51 @@ a:hover {
 
 	transition: opacity 0.25s, top 0.25s;
 }
-.portfolio .section .list .preview:hover .bg { opacity: 0.25; transform: scale(1.2, 1.2); }
+.portfolio .section .list .preview:hover .bg { opacity: 1; transform: scale(1.2, 1.2); }
 .portfolio .section .list .preview:hover h3 { opacity: 1; top: 50%; }
-.works .work .postcard
-{
-	width: 100%;
-	height: 120px;
-	background-size: cover;
-	background-position: center center;
+.works .work {
+  margin: 0rem 4rem;
 }
 .works .work h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.works .work {
-  margin: 0rem 4rem;
+.works .work .postcard {
+	width: 100%;
+	height: 120px;
+	background-size: cover;
+	background-position: center center;
 }
 ul {
   float: left;
   list-style-type:none
 }
-.screenshot {
-  float: left;
-	height: 260px;
+.screenshots img {
+  display: inline-block;
+  width: 49%;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
 }
-.details {
-  padding-left: 2rem;
+.details{
   padding-right: 2rem;
+  color: black;
+  text-align: left;
 }
 .details li {
-  margin: 0.5rem;
-}
-.inline-images {
-  float: left;
-  padding: 4rem 0rem;
+  margin: 0.5rem 0rem;
 }
 .inline-images img {
+  float: left;
   width: 160px;
   height: 160px;
+  margin: 1rem 0rem;
 }
-.info {
-  padding: 1rem 0rem;
+.works .work {
+  display: none;
 }
-.works .work h2, p{
+.works .work .info h2, p{
   color: black;
-  text-align: center;
+  text-align: left;
 }
+.info:after{content:""; display:block; clear:both}
 /*# sourceMappingURL=main.css.map */
